@@ -1,0 +1,9 @@
+.next/
+node_modules/
+.env*
+!.env.example
+.data/
+.codex-ppt-read-*/
+*.tsbuildinfo
+coverage/
+.vercel/
