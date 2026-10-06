@@ -32,7 +32,7 @@ Na primeira configuração, `PREDITIVA_XLSX_PATH` pode apontar para uma planilha
 
 A autenticação usa as variáveis `PREDITIVA_ADMIN_USER`, `PREDITIVA_ADMIN_PASSWORD` e `PREDITIVA_AUTH_SECRET`. Configure-as como variáveis sensíveis do projeto na Vercel; nenhuma credencial deve ser adicionada ao código-fonte.
 
-O arquivo `.data/notas.xlsx` é incluído no build de produção para permitir a leitura inicial na Vercel. Alterações feitas no sistema de arquivos de uma função serverless não são persistentes. Até a conexão com o SharePoint ser concluída, uma nova versão da planilha exige um novo deploy para ser permanente.
+O arquivo `.data/notas.xlsx` é versionado neste repositório privado e incluído no build de produção para permitir a leitura inicial na Vercel. Alterações feitas no sistema de arquivos de uma função serverless não são persistentes. Até a conexão com o SharePoint ser concluída, uma nova versão da planilha exige um commit e um novo deploy para ser permanente.
 
 ## Validação
 
@@ -50,7 +50,7 @@ O comando executa lint, verificação TypeScript, testes automatizados e build d
 - `src/lib/critical-equipment-store.ts`: persistência da classificação crítica;
 - `src/app/api/importar/route.ts`: importação atômica de novas planilhas;
 - `src/app/api/equipamentos-criticos/route.ts`: atualização da classificação;
-- `.data`: dados locais gerenciados em execução, fora do Git.
+- `.data/notas.xlsx`: planilha base versionada no repositório privado.
 
 ## Próxima etapa: SharePoint
 
