@@ -55,3 +55,8 @@ O comando executa lint, verificação TypeScript, testes automatizados e build d
 ## Próxima etapa: SharePoint
 
 A integração deverá obter o arquivo autorizado no SharePoint e entregá-lo ao mesmo processo já existente de validação e troca atômica. Assim, dashboard, regras, filtros e cadastro crítico permanecem independentes da origem do arquivo.
+
+## Documentação do projeto
+
+- [Plano de modernização do dashboard](docs/PLANO-MODERNIZACAO-DASHBOARD.md)
+- [PowerPoint de requisitos](docs/references/Site%20-%20PREDITVA%20-%20Elieber.pptx)
